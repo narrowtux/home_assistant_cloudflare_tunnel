@@ -1,0 +1,17 @@
+name: Cloudflared Tunnel
+version: "1.0.0"
+slug: cloudflared_tunnel
+description: Run a Cloudflare Tunnel using a user-configurable token
+arch:
+  - amd64
+  - aarch64
+  - armv7
+  - i386
+  - armhf
+startup: services
+boot: auto
+init: false
+options:
+  token: ""
+schema:
+  token: password
